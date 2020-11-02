@@ -6,8 +6,14 @@
         content = "IE=edge">
         <meta name="viewport" content="width=device-width",
         "initial-scale=1">
-        <title>create</title>
+        <title>Myprofile</title>
     </head>
-<body>create画面</body>
+<body>
+    <h1>MyProfile画面</h1>
+    {{ --layouts/profile.blade.phpを読み込む --}}
+    @extends('layouts.profile')
+    
+    </body>
+    
         
 </html>
