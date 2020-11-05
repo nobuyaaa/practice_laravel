@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\News;
 
 class NewsController extends Controller
 {
@@ -16,7 +17,6 @@ class NewsController extends Controller
     //22 ニュース投稿画面を作成
     public function create(Request $request){
         // admin/news/createにリダイレクトする
-        return redirect('admin/news/create');
         
         //varidation
         $this->validate($request, News::$rules);

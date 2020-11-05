@@ -1,4 +1,4 @@
-
+@extends('layouts.admin');
 @section('title', 'ニュースの新規作成')
 
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
