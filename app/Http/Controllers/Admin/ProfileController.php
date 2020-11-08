@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Profile;
-use App\profile_History;
+use App\profileHistory;
 use Carbon\Carbon;
 
 class ProfileController extends Controller
