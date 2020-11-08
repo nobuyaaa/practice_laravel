@@ -3,6 +3,9 @@
 @section('content')
 @section('title','プロフィールの編集')
     <div class="container">
+                <div class="row">
+                                <div class="col-md-8 mx-auto">
+
                          <form action="{{ action('Admin\ProfileController@update') }}" method="post" enctype="multipart/form-data">
 
                     @if (count($errors) > 0)
@@ -43,6 +46,7 @@
                                             {{ csrf_field() }}
                     <input type="submit" class="btn btn-primary" value="更新">
                     </div>
+                    </div>
                 </form>
                 <div class="row mt-5">
                     <div class="col-md-4 mx-auto">
@@ -55,6 +59,10 @@
                             @endif
                         </ul>
                     </div>
+                </div>
+                </div>
+                </div>
+                </div>
                 </div>
 @endsection
 
