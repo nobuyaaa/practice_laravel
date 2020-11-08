@@ -13,6 +13,11 @@ class ProfileHistoriesTable extends Migration
      */
     public function up()
     {
+        
+    // Schema::rename('変更前のテーブル名', '変更後のテーブル名');
+        // という形でテーブル名の変更を指定します。
+      
+    
         //
         Schema::create('profile_histories', function(Blueprint $table){
             $table->increments('id');
