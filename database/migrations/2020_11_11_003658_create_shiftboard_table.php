@@ -13,11 +13,12 @@ class CreateShiftboardTable extends Migration
      */
     public function up()
     {
-        Schema::create('shiftboard', function (Blueprint $table) {
+        Schema::create('shiftboards', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name'); //氏名
-            $table->integer('starttime'); //始まる時間
-            $table->integer('endtime'); //終わる時間
+            $table->time('starttime'); //始まる時間
+            $table->time('endtime'); //終わる時間
+            $table->int('dayofweek'); //曜日
         });
     }
 

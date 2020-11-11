@@ -27,8 +27,10 @@ Route::group(['prefix'=>'admin','middleware' => 'auth'], function(){
     
     Route::get('shiftboard/create','Admin\ShiftController@add');
     Route::post('shiftboard/create','Admin\ShiftController@create');
+    Route::get('shiftboard', 'Admin\ShiftController@index');
     Route::get('shiftboard/edit','Admin\ShiftController@edit');
     Route::post('shiftboard/edit','Admin\ShiftController@update');
+    Route::get('shiftboard/delete', 'Admin\ShiftController@delete');
 });
 
 Route::group(['prefix' => 'admin'], function() {
@@ -38,6 +40,8 @@ Route::group(['prefix' => 'admin'], function() {
     Route::get('news/edit', 'Admin\NewsController@edit')->middleware('auth'); // 追記
     Route::post('news/edit', 'Admin\NewsController@update')->middleware('auth');
     Route::get('news/delete', 'Admin\NewsController@delete')->middleware('auth');
+
+
 });
 
 //課題3
