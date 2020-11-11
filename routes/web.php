@@ -24,7 +24,11 @@ Route::group(['prefix'=>'admin','middleware' => 'auth'], function(){
     // -> middleware('auth');
     Route::get('profile/edit','Admin\ProfileController@edit'); // -> middleware('auth');
     Route::post('profile/edit', 'Admin\ProfileController@update');
-
+    
+    Route::get('shiftboard/create','Admin\ShiftController@add');
+    Route::post('shiftboard/create','Admin\ShiftController@create');
+    Route::get('shiftboard/edit','Admin\ShiftController@edit');
+    Route::post('shiftboard/edit','Admin\ShiftController@update');
 });
 
 Route::group(['prefix' => 'admin'], function() {
@@ -42,3 +46,4 @@ Route::group(['prefix' => 'admin'], function() {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
