@@ -21,10 +21,25 @@
                             <input type="text" class="form-control" name="name" value="{{ old('name') }}">
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label class="col-md-2" for="dayofweek">曜日</label>
+                    <!--<div class="form-group row">-->
+                    <!--    <label class="col-md-2"  for="dayofweek">曜日</label>-->
+                    <!--    <div class="col-md-10">-->
+                            <!--<input type="number" class="form-control" name="dayofweek" min="0" max="6" step="1" rows="20" value = "">-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    
+                           <div class="form-group row">
+                        <label class="col-md-2"  for="dayofweek">曜日</label>
                         <div class="col-md-10">
-                            <input type="number" class="form-control" name="dayofweek" rows="20" value = "{{ old('dayofweek') }}">
+                            <select name="dayofweek" value = "{{ old('dayofweek') }}" size="1">
+                                <option value="monday">月曜日</option>
+                                <option value="tuesday">火曜日</option>
+                                <option value="wednesday">水曜日</option>
+                                <option value="thursday">木曜日</option>
+                                <option value="friday">金曜日</option>
+                                <option value="saturday">土曜日</option>
+                                <option value="sunday">日曜日</option>
+                                </select>
                         </div>
                     </div>
                     <div class="form-group row">

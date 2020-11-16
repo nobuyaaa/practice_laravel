@@ -75,4 +75,11 @@ class ShiftController extends Controller
         $shiftboard->delete();
         return redirect('admin/shiftboard/');
     }
+    
+//     public function sort($weekofday)
+//     {
+//         $shiftboard = Shiftboard::orderBy('weekofday','starttime')->get();
+        
+//         return view('admin/shiftboard');
+//     }
 }
