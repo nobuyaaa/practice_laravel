@@ -18,7 +18,7 @@ class CreateShiftboardTable extends Migration
             $table->string('name'); //氏名
             $table->time('starttime'); //始まる時間
             $table->time('endtime'); //終わる時間
-            $table->int('dayofweek'); //曜日
+            // $table->string('dayofweek'); //曜日
         });
     }
 
